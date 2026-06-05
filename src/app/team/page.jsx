@@ -1,0 +1,2 @@
+import PageHero from '@/components/common/PageHero';import { players } from '@/data/siteData';
+export default function Team(){return <><PageHero title="Our Team" text="Meet the warriors who represent the club on the field."/><section className="section"><div className="container players-grid">{players.map(p=><div className="player-card" key={p.name}><div className="player-avatar">{p.number}</div><h3>{p.name}</h3><p>{p.role}</p></div>)}</div></section></>}

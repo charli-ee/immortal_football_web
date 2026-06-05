@@ -1,0 +1,2 @@
+import SectionHead from '@/components/common/SectionHead';import { stats } from '@/data/siteData';
+export default function Achievements(){return <section className="section"><div className="container"><SectionHead eyebrow="Achievements" title="Numbers that define our journey" text="A quick view of the club’s growth, supporters and competitive spirit."/><div className="cards-grid">{stats.map((s)=> <div className="stat-card reveal" key={s.label}><div className="icon">{s.icon}</div><h3>{s.value}</h3><h4>{s.label}</h4><p>{s.text}</p></div>)}</div></div></section>}

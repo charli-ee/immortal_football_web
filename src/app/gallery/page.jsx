@@ -1,0 +1,2 @@
+import PageHero from '@/components/common/PageHero';import { galleryImages } from '@/data/siteData';
+export default function Gallery(){return <><PageHero title="Gallery" text="Club photos, football action and visual highlights."/><section className="section"><div className="container gallery-grid">{galleryImages.map(img=><div className="gallery-item" key={img.src}><img src={img.src} alt={img.title}/><span>{img.title}</span></div>)}</div></section></>}

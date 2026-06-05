@@ -1,0 +1,1 @@
+export default function IntroStrip(){return <div className="intro-strip"><div className="marquee">⚽ IMMORTAL WARRIORS FC • PASSION • UNITY • DISCIPLINE • FOOTBALL FROM ASSAM • ⚽ IMMORTAL WARRIORS FC • PASSION • UNITY • DISCIPLINE • FOOTBALL FROM ASSAM • </div></div>}

@@ -1,0 +1,2 @@
+import PageHero from '@/components/common/PageHero';import { matches } from '@/data/siteData';
+export default function Matches(){return <><PageHero title="Matches" text="Upcoming fixtures, recent scores and matchday information."/><section className="section"><div className="container cards-3">{matches.map(m=><div className="match-card" key={m.id}><span className="badge">{m.status}</span><h3>{m.title}</h3><p>{m.date}</p><p>{m.venue}</p><div className="score">{m.score}</div></div>)}</div></section></>}

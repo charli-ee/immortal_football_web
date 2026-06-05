@@ -1,0 +1,2 @@
+import PageHero from '@/components/common/PageHero';import { news } from '@/data/siteData';
+export default function News(){return <><PageHero title="Club News" text="Latest announcements, stories and updates from Immortal Warriors FC."/><section className="section"><div className="container cards-3">{news.map(n=><article className="news-card" key={n.title}><span className="badge">Latest</span><h3>{n.title}</h3><p>{n.text}</p></article>)}</div></section></>}
